@@ -1,0 +1,14 @@
+{
+    "categoryId": "category to check for dupes",
+    "channelIds" : [
+        "special channels outside of category to check for dupes"
+    ],
+    "ignoreIds": [
+        "channels inside of category to ignore dupe checks"
+    ],
+    "imgChanId": [
+        "category to check if message is image/link"
+    ],
+    "selfId": "bot id",
+    "token" : "bot token"
+}
