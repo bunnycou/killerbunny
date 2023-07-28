@@ -9,6 +9,9 @@
     "imgChanId": [
         "category to check if message is image/link"
     ],
+    "cmdChan": "channel id for commands",
+    "prefix": "prefix for commands (!kbun)",
     "selfId": "bot id",
-    "token" : "bot token"
+    "token" : "bot token",
+    "riotKey": "riot api key"
 }
