@@ -176,10 +176,10 @@ client.on(Events.MessageCreate, async message => {
     if (message.content.includes("http")) return;
     if (message.attachments.size == 0) {
       message.delete();
-      message.channel.send(`${message.author} Please only send messages containing a mod concept (image or link). Do not discuss concepts here. This message will self destruct in 1 minute.`)
+      message.channel.send(`${message.author} Please only send messages containing a mod concept (image or link). Do not discuss concepts here. This message will be deleted in 1 minute.`)
       .then(msg => {
         console.log(`Deleted message from "${message.author.username}" in "${message.channel.name}" and sent warning`);
-        setTimeout(() => msg.delete(), 5*1000)
+        setTimeout(() => msg.delete(), 60*1000)
       })
     }
   }
