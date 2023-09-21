@@ -165,7 +165,7 @@ client.on(Events.MessageCreate, async message => {
     message.channel.messages.fetch({ limit:2 }).then(messages => {
       if (messages.size < 2) {
           console.log(`Channel "${message.channel.name}" only has one message`);
-      } else if (messages.at(0).content == messages.at(1).content) {
+      } else if (messages.at(0).content.split("http")[0] == messages.at(1).content.split("http")[0]) {
           message.delete();
           console.log(`Deleted message from "${message.author.username}" in "${message.channel.name}" at ${message.createdAt}`);
       }
